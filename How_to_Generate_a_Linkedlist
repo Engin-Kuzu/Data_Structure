@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<stdlib.h>                //   malloc  fonk kullan�laca�� i�in ekledik.
+
+
+typedef struct NODE {
+	int data;
+	struct NODE *next;
+} NODE;
+
+/*
+struct NODE {
+	int data;
+	struct NODE *next;
+};
+*/
+int main(){
+
+// linkedlist olu�turma	
+/*	struct NODE *firstNode=NULL;
+	firstNode = (struct NODE*)malloc(sizeof(struct NODE));
+	
+	struct NODE *secondNode = (struct NODE*)malloc(sizeof(struct NODE));*/
+	
+	NODE *firstNode=NULL;
+	firstNode = (struct NODE*)malloc(sizeof(struct NODE));
+	
+	NODE *secondNode = (struct NODE*)malloc(sizeof(struct NODE));
+	
+	firstNode -> data=15;
+	firstNode -> next=secondNode;
+	
+	secondNode -> data=25;
+	secondNode -> next=NULL;
+	
+	
+	
+	printf("%d=>%d",firstNode->data,secondNode->data);
+
+	
+	return 0;
+}
+
