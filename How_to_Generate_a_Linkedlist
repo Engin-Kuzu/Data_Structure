@@ -15,7 +15,7 @@ struct NODE {
 */
 int main(){
 
-// linkedlist olu�turma	
+// linkedlist olusturma	
 /*	struct NODE *firstNode=NULL;
 	firstNode = (struct NODE*)malloc(sizeof(struct NODE));
 	
