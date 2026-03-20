@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>                //   malloc  fonk kullan�laca�� i�in ekledik.
+#include<stdlib.h>                //   malloc  fonk kullanılacagi icin ekledik.
 
 
 typedef struct NODE {
