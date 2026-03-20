@@ -1,0 +1,93 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+typedef struct NODE {
+	int data;
+	struct NODE *next;
+} node;
+
+node *start;
+node *temp;
+node *q;
+
+
+void sona_ekle(int veri){
+	
+	node *eklenecekNode= (struct NODE*)malloc(sizeof(struct NODE));	
+	
+	eklenecekNode->data = veri;
+	eklenecekNode->next = NULL;
+	
+	
+	if(start == NULL){
+		start=eklenecekNode;
+	}
+	else{
+		q=start;
+		
+		while(q->next != NULL){
+			q=q->next;
+		}
+		
+			
+		q->next = eklenecekNode;
+	}
+}
+display(){
+	
+	printf("linkedlist: ");
+	
+	q = start;
+	
+	while(q->next != NULL){
+		printf("%d=>",q->data);
+		
+		q = q->next;
+	}
+	
+	if(q->next == NULL){
+		printf("%d",q->data);
+	}
+}
+
+int main(){
+
+	int veri;
+	int secim=0;
+
+	while(secim!=3){
+		printf("***\n1- sona eleman ekleme\n");
+		printf("2- yazdirma\n");
+		printf("3- cikis\n");
+		printf("islemini sec:");
+		
+		scanf("%d",&secim);
+		
+		printf("***\n\n");
+		
+		switch(secim){
+			case 1:
+				printf("eklenecek veriyi gir: ");
+				scanf("%d",&veri);
+		
+				sona_ekle(veri);
+				
+				printf("\n\n");
+				
+				break;
+			case 2:
+				display();	
+				printf("\n\n");
+				
+				break;
+			case 3:
+				printf("program kapatiliyor");
+				break;
+			default:
+				printf("hatali bir islem kodu girdin!!");
+				printf("\n\n");
+		}
+	}	
+}
+
