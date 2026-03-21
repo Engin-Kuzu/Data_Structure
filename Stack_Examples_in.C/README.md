@@ -1,4 +1,4 @@
-Stack Data Structure Implementation in C
+## Stack Data Structure Implementation in C
 This project demonstrates a Stack data structure implemented using a Linked List with dynamic memory management in C. It follows the LIFO (Last In, First Out) principle.
 
 🛠️ Data Structure Overview
