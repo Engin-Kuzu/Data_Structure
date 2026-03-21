@@ -33,9 +33,3 @@ Traverses the queue from `front` to `rear` and prints all stored values.
 
 ### 5. `menu()`
 An interactive terminal-based interface to manage queue operations easily.
-
----
-
-## 🛠️ Tech Stack
-* **Language:** C
-* **Concepts:** Dynamic Memory (malloc), Pointers, Linked Lists, Queue Logic (FIFO).
