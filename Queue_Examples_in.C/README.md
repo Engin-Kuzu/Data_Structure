@@ -4,7 +4,7 @@ This project demonstrates a **Queue** data structure based on a **Linked List** 
 
 ---
 
-## 🛠️ Data Structure Overview
+## Data Structure Overview
 * **Node Structure:** Each node contains an integer (`int data`) and a pointer to the next node (`struct NODE *next`).
 * **Pointers:** 
   * `front`: Points to the first element (where removal occurs).
@@ -12,7 +12,7 @@ This project demonstrates a **Queue** data structure based on a **Linked List** 
 
 ---
 
-## 🚀 Core Functions
+## Core Functions
 
 ### 1. `enQueue(int realData)`
 Adds a new element to the end of the queue.
